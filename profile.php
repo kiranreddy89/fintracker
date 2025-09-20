@@ -4,7 +4,7 @@ include 'config.php';
 
 // Redirect to login if not authenticated
 if (!isset($_SESSION['user_id'])) {
-    header("Location: login.html");
+    header("Location: index.html");
     exit();
 }
 

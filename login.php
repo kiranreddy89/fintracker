@@ -26,11 +26,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             exit();
         } else {
             // Invalid password
-            echo "<script>alert('Invalid password!'); window.location.href='login.html';</script>";
+            echo "<script>alert('Invalid password!'); window.location.href='index.html';</script>";
         }
     } else {
         // User not found
-        echo "<script>alert('User not found!'); window.location.href='login.html';</script>";
+        echo "<script>alert('User not found!'); window.location.href='index.html';</script>";
     }
     
     $stmt->close();
