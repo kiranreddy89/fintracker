@@ -1,8 +1,9 @@
 <?php
-$host = "mysql-db";  // service name from docker-compose
-$user = "root";
-$pass = "root";
-$db   = "fintracker";
+// Read database credentials from environment variables
+$host = getenv('DB_HOST');
+$user = getenv('DB_USER');
+$pass = getenv('DB_PASSWORD');
+$db   = getenv('DB_NAME');
 
 // Create connection
 $conn = new mysqli($host, $user, $pass, $db);
